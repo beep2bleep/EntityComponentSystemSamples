@@ -1,6 +1,16 @@
 # Job system
 
-TODO: WHY MULTITHREAD?
+Reasons to Multithread:
+
+Improved throughput. Many concurrent compute operations and I/O requests within a single process.
+
+Simultaneous and fully symmetric use of multiple processors for computation and I/O
+
+Superior application responsiveness and framerate. If a request can be launched on its own thread, applications do not freeze or hitch. The game or application will not block, or otherwise wait, pending the completion of another request.
+
+Improved server responsiveness. Large or complex requests or slow clients don't block other requests for service. The overall throughput of the server is much greater.
+
+Minimized system resource usage. Threads impose minimal impact on system resources. Threads require less overhead to create, maintain, and manage than a traditional process.
 
 ## How the job system works
 
